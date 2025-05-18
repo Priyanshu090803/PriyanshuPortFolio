@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className=' links  font-plex items-center flex gap-12 font-light text-base '>
         {
           NAV_LINKS.map((item,index)=><a 
-          className=' cursor-pointer hover:text-neutral-500 text-amber-50 transition-all duration-600 ease-in-out  delay-100 hover:scale-95 hover:border-b-1 '
+          className=' cursor-pointer hover:text-neutral-500 text-neutral-900 transition-all duration-600 ease-in-out  delay-100 hover:scale-95 hover:border-b-1 '
           key={index}>{item}</a>)
         }
       </div>

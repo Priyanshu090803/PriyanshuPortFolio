@@ -1,5 +1,6 @@
 import React from 'react'
 import { MY_IMG } from '../Utils/constants'
+import { easeInOut, motion } from 'framer-motion'
 
 const About = () => {
     let sentence1="With expertise in JavaScript, React, Node.js, and modern CSS frameworks like Tailwind, I build seamless and interactive web experiences. I love bringing designs to life with smooth animations using GSAP & Framer Motion and ensuring robust backends with Express, MongoDB, and Mongoose"
@@ -9,13 +10,13 @@ const About = () => {
     const w2=sentence2.split(" ")
   return (
     
-    <div className=' w-full h-full py-20 px-16 bg-[#cdea68] rounded-t-3xl  text-neutral-900'>
+    <div className=' w-full h-full py-20 px-16 bg-[#f6f8ed] rounded-t-3xl  text-neutral-900'>
        <div className=' w-full flex justify-center  pl-6 md:pl-0'>
         <h2 className=' text-[4vw] font-monoserrat leading-[4.5vw] tracking-tight'>
            Hi, I'm Priyanshu, a passionate web developer dedicated to crafting fast, responsive, and visually stunning websites.
         </h2>
         </div>
-        <div className='  border-[#a8ba68] mt-10 border'></div>
+        <div className='  border-[#d4dabd] mt-10 border'></div>
 
         <div className='  flex pt-10 mb-12 justify-between md:flex-row flex-col'>
             <h2 className=' text-xl md:ml-0 ml-8 mt-10 font-semibold hover:text-rose-500 text-emerald-800 uppercase duration-500 delay-200 ease-in-out transition-all  hover:scale-95'>What you can expect:</h2>
@@ -44,14 +45,38 @@ const About = () => {
 
         <div className='  border-[#a8ba68] my-16 border'></div>
 
-        <div className='  h-full w-full flex md:justify-between justify-center px-16 py-16 md:flex-row flex-col gap-10 mt-10'>
+        <div className='  h-full [perspective::1000px] [transform-style:preserve-3d] w-full flex md:justify-between justify-center px-16 py-16 md:flex-row flex-col gap-10 mt-10'>
             <div className='  flex flex-col md:gap-24  gap-10'>
             <h2 className=' text-4xl hover:text-rose-500  delay-200 duration-500 ease-in-out transition-all font-monoserrat  text-neutral-900 md:mt-10 mt-0 font-medium  hover:scale-95'>I automate boring tasks with scripts!</h2>
                <div className='  border-[#a8ba68]  border'></div>
             <p className=' font-monoserrat text-lg text-neutral-900 hover:text-rose-400 delay-200 duration-500 ease-in-out transition-all  hover:scale-95'>Let's build something amazing together!</p>
             </div>
-            <img src={MY_IMG}
-            className=' md:w-[30vw]  rounded-md w-60 hover:opacity-95 hover:scale-95 delay-200 duration-500 ease-in-out transition-all'/>
+            <motion.img 
+            whileHover={{
+                rotateX:20,
+                rotateY:20,
+                y:-50,
+                transition:{
+                duration:0.3,
+                ease:"easeInOut"
+                }
+            }}
+            initial={{
+                opacity:0
+            }}
+            whileInView={{
+                opacity:1,
+                scale:1,
+                transition:{
+                    duration:3,
+                    // delay:0.3
+                }
+            }}
+            viewport={{
+                once:true
+            }}
+            src={MY_IMG}
+            className=' md:w-[30vw]    hover:shadow-[0_4px_6px_1px_rgba(80,40,0,0.5),0_2px_4px_-1px_rgba(0,110,30,0.06)] rounded-md w-60 delay-200 duration-500 ease-in-out transition-all'/>
         </div>
 
         </div>
