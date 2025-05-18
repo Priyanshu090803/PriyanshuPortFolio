@@ -4,7 +4,7 @@ import { FaArrowUp } from 'react-icons/fa'
 
 const LandingPage = () => {
   return (
-    <div className=' w-full h-full bg-black pt-1'>
+    <div className=' w-full h-full bg-[#0d100f] pt-1'>
         <div className=' mt-40 px-20 gap-2 flex flex-col'>
             {
                 LANDING_PAGE_HEADING.map((heading,index)=>{

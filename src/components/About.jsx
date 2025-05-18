@@ -1,4 +1,5 @@
 import React from 'react'
+import { MY_IMG } from '../Utils/constants'
 
 const About = () => {
     let sentence1="With expertise in JavaScript, React, Node.js, and modern CSS frameworks like Tailwind, I build seamless and interactive web experiences. I love bringing designs to life with smooth animations using GSAP & Framer Motion and ensuring robust backends with Express, MongoDB, and Mongoose"
@@ -9,34 +10,50 @@ const About = () => {
   return (
     
     <div className=' w-full h-full py-20 px-16 bg-[#cdea68] rounded-t-3xl  text-neutral-900'>
-      
+       <div className=' w-full flex justify-center  pl-6 md:pl-0'>
         <h2 className=' text-[4vw] font-monoserrat leading-[4.5vw] tracking-tight'>
            Hi, I'm Priyanshu, a passionate web developer dedicated to crafting fast, responsive, and visually stunning websites.
         </h2>
-        <div className='  border-[#a4b26f] mt-10'></div>
-        <div className=' flex pt-10  justify-between md:flex-row flex-col'>
-            <h2 className=' text-xl md:ml-0 ml-8 mt-10 font-semibold hover:text-rose-500 text-emerald-800 uppercase duration-500 delay-200 ease-in-out transition-all'>What you can expect:</h2>
-            <div className=' md:w-[70%] w-[100%]  flex md:flex-row flex-col p-2 gap-10 '>
-               <div className='  flex gap-10 p-10 flex-wrap '>
+        </div>
+        <div className='  border-[#a8ba68] mt-10 border'></div>
+
+        <div className='  flex pt-10 mb-12 justify-between md:flex-row flex-col'>
+            <h2 className=' text-xl md:ml-0 ml-8 mt-10 font-semibold hover:text-rose-500 text-emerald-800 uppercase duration-500 delay-200 ease-in-out transition-all  hover:scale-95'>What you can expect:</h2>
+            <div className=' md:w-[70%] w-[100%]  flex md:flex-row flex-col p-2 gap-2 '>
+               <div className='  flex gap-10 p-10 flex-wrap cursor-pointer'>
                 {
                     w1.map((item,index)=>{
                         return(
-                            <p  className='  -mx-4 -mb-10 text-lg font-monoserrat text-emerald-800 hover:text-red-500 tracking-tighter duration-500 ease-in-out transition-all delay-75 '>{item}</p>
+                            <p  className='  -mx-4 -mb-10 text-lg font-monoserrat text-emerald-800 hover:text-red-500 hover:scale-95 tracking-tighter duration-500 ease-in-out transition-all delay-75 '>{item}</p>
                         )
                     })
                 }
                 </div>
-                <div className='  flex gap-10 p-10 flex-wrap'>
+                <div className='  flex gap-10 p-10 flex-wrap cursor-pointer'>
                 {
                     w2.map((item,index)=>{
                         return(
-                            <p  className='  -mx-4 -mb-12 text-lg font-monoserrat text-emerald-800 hover:text-red-500 tracking-tighter duration-500 ease-in-out transition-all delay-75'>{item}</p>
+                            <p  className=' hover:scale-95  -mx-4 -mb-12 text-lg font-monoserrat text-emerald-800 hover:text-red-500 tracking-tighter duration-500 ease-in-out transition-all delay-75'>{item}</p>
                         )
                     })
                 }
                 </div>
+            </div> 
+
+        </div> 
+
+        <div className='  border-[#a8ba68] my-16 border'></div>
+
+        <div className='  h-full w-full flex md:justify-between justify-center px-16 py-16 md:flex-row flex-col gap-10 mt-10'>
+            <div className='  flex flex-col md:gap-24  gap-10'>
+            <h2 className=' text-4xl hover:text-rose-500  delay-200 duration-500 ease-in-out transition-all font-monoserrat  text-neutral-900 md:mt-10 mt-0 font-medium  hover:scale-95'>I automate boring tasks with scripts!</h2>
+               <div className='  border-[#a8ba68]  border'></div>
+            <p className=' font-monoserrat text-lg text-neutral-900 hover:text-rose-400 delay-200 duration-500 ease-in-out transition-all  hover:scale-95'>Let's build something amazing together!</p>
             </div>
-        </div>    
+            <img src={MY_IMG}
+            className=' md:w-[30vw]  rounded-md w-60 hover:opacity-95 hover:scale-95 delay-200 duration-500 ease-in-out transition-all'/>
+        </div>
+
         </div>
   )
 }
