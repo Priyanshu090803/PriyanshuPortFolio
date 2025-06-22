@@ -26,7 +26,7 @@ const Projects = () => {
               duration:0.6
             }}
 
-            className=' hover: text-[10vw] uppercase font-monoserrat mb-10 bg-clip-text font-semibold text-transparent bg-gradient-to-r from-black to-zinc-200  hover:bg-gradient-to-r hover:from-neutral-900  hover:to-neutral-400  text-shadow-sm shadow-blue-400'>Projects</motion.h1>
+            className=' hover: text-[10vw] uppercase font-monoserrat mb-10 bg-clip-text font-semibold text-transparent bg-gradient-to-r from-black to-zinc-500  hover:bg-gradient-to-r hover:from-neutral-900  hover:to-neutral-600  text-shadow-sm shadow-blue-400'>Projects</motion.h1>
         </div>
         <div className=' cards w-full flex md:flex-row flex-col py-10 gap-10 items-center h-full flex-wrap justify-center'>
         <motion.div

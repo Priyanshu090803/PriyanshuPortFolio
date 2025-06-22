@@ -3,6 +3,7 @@ import { MY_IMG } from '../Utils/constants'
 import { easeInOut, motion } from 'framer-motion'
 
 const About = () => {
+
     let sentence1="With expertise in JavaScript, React, Node.js, and modern CSS frameworks like Tailwind, I build seamless and interactive web experiences. I love bringing designs to life with smooth animations using GSAP & Framer Motion and ensuring robust backends with Express, MongoDB, and Mongoose"
     
     let sentence2 ="Whether it's a sleek front-end interface or a scalable full-stack application, I focus on writing clean, efficient code while keeping user experience at the forefront."
@@ -10,22 +11,26 @@ const About = () => {
     const w2=sentence2.split(" ")
   return (
     
-    <div className=' w-full h-full py-20 px-16 bg-[#f6f8ed] rounded-t-3xl  text-neutral-900'>
-       <div className=' w-full flex justify-center  pl-6 md:pl-0'>
-        <h2 className=' text-[4vw] font-monoserrat leading-[4.5vw] tracking-tight'>
+    <div className=' w-full h-full md:py-20  md:px-16 px-4 bg-[#ffffff] rounded-t-3xl  text-neutral-900'
+    data-scroll data-scroll-section data-scroll-speed=".1"
+
+    
+    >
+       <div className=' w-full flex justify-center   '>
+        <h2 className=' md:text-6xl text-3xl font-monoserrat md:leading-[4.5vw] tracking-tight'>
            Hi, I'm Priyanshu, a passionate web developer dedicated to crafting fast, responsive, and visually stunning websites.
         </h2>
         </div>
         <div className='  border-[#d4dabd] mt-10 border'></div>
 
-        <div className='  flex pt-10 mb-12 justify-between md:flex-row flex-col'>
-            <h2 className=' text-xl md:ml-0 ml-8 mt-10 font-semibold hover:text-rose-500 text-emerald-800 uppercase duration-500 delay-200 ease-in-out transition-all  hover:scale-95'>What you can expect:</h2>
+        <div className='  flex md:pt-10 md:mb-12 justify-between md:flex-row flex-col'>
+            <h2 className=' text-xl    md:mt-10 mt-6 font-semibold hover:text-rose-500 text-emerald-800 uppercase duration-500 delay-200 ease-in-out transition-all  hover:scale-95'>What you can expect:</h2>
             <div className=' md:w-[70%] w-[100%]  flex md:flex-row flex-col p-2 gap-2 '>
-               <div className='  flex gap-10 p-10 flex-wrap cursor-pointer'>
+               <div className='  flex md:gap-10 gap-9 md:p-10 p-2 flex-wrap cursor-pointer'>
                 {
                     w1.map((item,index)=>{
                         return(
-                            <p  className='  -mx-4 -mb-10 text-lg font-monoserrat text-emerald-800 hover:text-red-500 hover:scale-95 tracking-tighter duration-500 ease-in-out transition-all delay-75 '>{item}</p>
+                            <p  className='  -mx-4 -mb-10 text-lg md:text-3xl font-monoserrat text-emerald-800 hover:text-red-500 hover:scale-95 tracking-tighter duration-500 ease-in-out transition-all delay-75 '>{item}</p>
                         )
                     })
                 }
@@ -34,7 +39,7 @@ const About = () => {
                 {
                     w2.map((item,index)=>{
                         return(
-                            <p  className=' hover:scale-95  -mx-4 -mb-12 text-lg font-monoserrat text-emerald-800 hover:text-red-500 tracking-tighter duration-500 ease-in-out transition-all delay-75'>{item}</p>
+                            <p  className=' hover:scale-95  -mx-4 -mb-12 text-lg md:text-3xl font-monoserrat text-emerald-800 hover:text-red-500 tracking-tighter duration-500 ease-in-out transition-all delay-75'>{item}</p>
                         )
                     })
                 }

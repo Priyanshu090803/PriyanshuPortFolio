@@ -5,10 +5,15 @@ import Marquee from './components/Marquee'
 import About from './components/About'
 import Playfull from './components/Playfull'
 import Projects from './components/Projects'
+import LocomotiveScroll from 'locomotive-scroll';
 
 const App = () => {
+  const locomotiveScroll = new LocomotiveScroll({
+    smooth:true,
+     multiplier: 0.8,
+  });
   return (
-    <div className=' w-full h-full overflow-x-hidden bg-[#ffffff] text-neutral-100'>
+    <div className=' w-full h-full overflow-x-hidden bg-white  text-neutral-100'>
       <Navbar/>
       <LandingPage/>
       <Marquee/>

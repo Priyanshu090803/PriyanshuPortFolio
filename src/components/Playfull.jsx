@@ -21,8 +21,10 @@ const Playfull = () => {
     }, []);
 
     return (
-        <div className='w-full h-screen md:px-52 px-4 py-10 bg-[#d1f0b2] rounded-3xl'>
-            <div className='w-full h-full relative bg-gray-300 rounded-4xl'>
+        <div className='w-full h-screen md:px-52 px-4 py-10 bg-gradient-to-tr from-[#c1bcc4] to-[#8f7cb9] rounded-t-3xl overflow-hidden'>
+            <div className='w-full h-full relative bg-gray-300 rounded-4xl'
+            data-scroll data-scroll-speed="-.8"
+            >
                 <AnimationDraw />
                 <div className='gap-10 rounded-lg flex absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]'>
                     <div className='w-[20vw]  h-[20vw] bg-zinc-50 rounded-full flex items-center justify-center'>
