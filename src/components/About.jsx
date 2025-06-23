@@ -81,7 +81,7 @@ const About = () => {
                 once:true
             }}
             src={MY_IMG}
-            className=' md:w-[30vw]    hover:shadow-[0_4px_6px_1px_rgba(80,40,0,0.5),0_2px_4px_-1px_rgba(0,110,30,0.06)] rounded-md w-60 delay-200 duration-500 ease-in-out transition-all'/>
+            className=' md:w-[30vw] hover:shadow-2xl cursor-pointer hover:shadow-neutral-600  rounded-md w-60 delay-200 duration-500 ease-in-out transition-all'/>
         </div>
 
         </div>

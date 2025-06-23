@@ -17,7 +17,7 @@ const LandingPage = () => {
                             width:0
                            }}
                            animate={{
-                            width:"15rem"
+                            width:"11rem"
                            }}
                            transition={{
                             duration:0.5,
@@ -32,9 +32,9 @@ const LandingPage = () => {
                           
                            }}
                            
-                           className=' shadow-md hover:shadow-none shadow-neutral-600 bg-gradient-to-r from-purple-200 to-[#4d3b54]   hover:bg-gradient-to-r  hover:from-neutral-300 hover:to-neutral-900 w-36  rounded-lg h-20 md:h-36 flex items-center overflow-hidden cursor-pointer  0 justify-center duration-300 '> 
+                           className=' shadow-md hover:shadow-none shadow-neutral-600 bg-gradient-to-r from-purple-200 to-[#4d3b54]   hover:bg-gradient-to-r  hover:from-neutral-300 hover:to-neutral-900 w-36  rounded-lg h-20 md:h-32 flex items-center overflow-hidden cursor-pointer  0 justify-center duration-300 '> 
                             <motion.h2 
-                            className='  h-full w-full pt-[20%] py-2 -rotate-[35deg] font-bold text-[22px] md:text-[40px] scale-115 hover:scale-80 hover:rotate-360 duration-800 text-neutral-300 hover:text-neutral-100 hover:text-shadow-blue-100 hover:text-shadow-xs delay-150 uppercase'>Priyanshu
+                            className='  h-full w-full pt-[20%] py-2 -rotate-[35deg] font-bold text-[20px] md:text-[32px] scale-115 hover:scale-80 hover:rotate-360 duration-800 text-neutral-300 hover:text-neutral-100 hover:text-shadow-blue-100 hover:text-shadow-xs delay-150 uppercase active:rotate-360 active:text-neutral-100 active:text-shadow-blue-100 active:text-shadow-xs active:scale-80'>Priyanshu
                             </motion.h2>
                             </motion.div>
 
@@ -58,10 +58,10 @@ const LandingPage = () => {
             
         </div>
 
-        <div className=' border-t-[1px] border-zinc-300 mt-24 flex justify-between md:px-20 md:py-10 px-4 py-6 gap-6'>
+        <div className=' border-t-[1px] border-zinc-300 md:mt-24 mt-10 flex justify-between md:px-20 md:py-10 px-4 py-6 gap-6'>
             {
             ["Building website gives me adrenaline rush! 💉","Passionate about building. 👷"].map((item,index)=><p
-            className=' font-monoserrat  text-neutral-700 font-medium md:text-xl text-xs hover:text-neutral-500 hover:scale-95 delay-300 duration-500 ease-in-out transition-all '
+            className=' font-monoserrat  text-neutral-700 font-medium md:text-lg text-xs hover:text-neutral-500 hover:scale-95 delay-300 duration-500 ease-in-out transition-all '
             key={index}>
                 {item} 
             </p>)

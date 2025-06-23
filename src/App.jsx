@@ -6,6 +6,7 @@ import About from './components/About'
 import Playfull from './components/Playfull'
 import Projects from './components/Projects'
 import LocomotiveScroll from 'locomotive-scroll';
+import Skills from './components/Skills'
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll({
@@ -18,6 +19,7 @@ const App = () => {
       <LandingPage/>
       <Marquee/>
       <About/>
+      <Skills/>
       <Playfull/>
       <Projects/>
     </div>
