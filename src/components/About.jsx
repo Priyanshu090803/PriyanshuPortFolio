@@ -11,13 +11,13 @@ const About = () => {
     const w2=sentence2.split(" ")
   return (
     
-    <div className=' w-full h-full md:py-20  md:px-16 px-4 bg-[#ffffff] rounded-t-3xl  text-neutral-900'
+    <div className=' w-full h-full md:py-20  md:px-16 px-4  rounded-t-3xl  text-neutral-900 .stack'
     data-scroll data-scroll-section data-scroll-speed=".1"
 
     
     >
        <div className=' w-full flex justify-center   '>
-        <h2 className=' md:text-6xl text-3xl font-monoserrat md:leading-[4.5vw] tracking-tight'>
+        <h2 className=' md:text-6xl text-2xl text-center font-monoserrat md:leading-[4.5vw] tracking-tight'>
            Hi, I'm Priyanshu, a passionate web developer dedicated to crafting fast, responsive, and visually stunning websites.
         </h2>
         </div>
@@ -25,7 +25,7 @@ const About = () => {
 
         <div className='  flex md:pt-10 md:mb-12 justify-between md:flex-row flex-col'>
             <h2 className=' text-xl    md:mt-10 mt-6 font-semibold hover:text-rose-500 text-emerald-800 uppercase duration-500 delay-200 ease-in-out transition-all  hover:scale-95'>What you can expect:</h2>
-            <div className=' md:w-[70%] w-[100%]  flex md:flex-row flex-col p-2 gap-2 '>
+            <div className=' md:w-[50%] w-[100%]  flex md:flex-row flex-col p-2 gap-2 '>
                <div className='  flex md:gap-10 gap-9 md:p-10 p-2 flex-wrap cursor-pointer'>
                 {
                     w1.map((item,index)=>{
@@ -35,7 +35,7 @@ const About = () => {
                     })
                 }
                 </div>
-                <div className='  flex gap-10 p-10 flex-wrap cursor-pointer'>
+                {/* <div className='  flex gap-10 p-10 flex-wrap cursor-pointer'>
                 {
                     w2.map((item,index)=>{
                         return(
@@ -43,21 +43,30 @@ const About = () => {
                         )
                     })
                 }
-                </div>
+                </div> */}
             </div> 
 
         </div> 
 
-        <div className='  border-[#a8ba68] my-16 border'></div>
+        <div className='  border-[#e6e9d8] md:my-16 mt-6 border'></div>
 
-        <div className='  h-full [perspective::1000px] [transform-style:preserve-3d] w-full flex md:justify-between justify-center px-16 py-16 md:flex-row flex-col gap-10 mt-10'>
-            <div className='  flex flex-col md:gap-24  gap-10'>
+        <div className='  h-full [perspective::1000px] [transform-style:preserve-3d] w-full flex md:justify-between justify-center md:px-16 md:py-16 md:flex-row flex-col gap-10 md:mt-10 mt-4 items-center'>
+            <div className='  flex flex-col md:gap-24  gap-6'>
             <h2 className=' text-4xl hover:text-rose-500  delay-200 duration-500 ease-in-out transition-all font-monoserrat  text-neutral-900 md:mt-10 mt-0 font-medium  hover:scale-95'>I automate boring tasks with scripts!</h2>
-               <div className='  border-[#a8ba68]  border'></div>
-            <p className=' font-monoserrat text-lg text-neutral-900 hover:text-rose-400 delay-200 duration-500 ease-in-out transition-all  hover:scale-95'>Let's build something amazing together!</p>
+               <div className='  border-[#dadecd]  border'></div>
+            <p className=' font-monoserrat text-lg text-neutral-900 hover:text-rose-400 delay-200 duration-500 ease-in-out transition-all  hover:scale-95 text-center md:text-left'>Let's build something amazing together!</p>
             </div>
             <motion.img 
             whileHover={{
+                rotateX:20,
+                rotateY:20,
+                y:-50,
+                transition:{
+                duration:0.3,
+                ease:"easeInOut"
+                }
+            }}
+            whileTap={{
                 rotateX:20,
                 rotateY:20,
                 y:-50,

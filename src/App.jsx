@@ -14,7 +14,7 @@ const App = () => {
      multiplier: 0.8,
   });
   return (
-    <div className=' w-full h-full overflow-x-hidden bg-white  text-neutral-100'>
+    <div className=' w-full h-full overflow-x-hidden bg-[#eeeee958]  text-neutral-100'>
       <Navbar/>
       <LandingPage/>
       <Marquee/>

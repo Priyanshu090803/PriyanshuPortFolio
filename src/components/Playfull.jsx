@@ -106,7 +106,9 @@ const Playfull = () => {
     }, []);
 
     return (
-        <div className='w-full h-screen'>
+        <motion.div className='w-full h-screen'
+          
+        >
         <div className='w-full md:h-full h-2/3 md:px-52 px-4 py-10 bg-gradient-to-tr from-[#c1bcc4] to-[#8f7cb9] rounded-t-3xl overflow-hidden'>
             <div className='w-full md:h-full h-2/3 relative bg-gray-300 rounded-4xl'
             data-scroll data-scroll-speed="-.2"
@@ -148,7 +150,7 @@ const Playfull = () => {
                     </div>
                 </div>
             </div>
-        </div></div>
+        </div></motion.div>
     )
 }
 

@@ -1,10 +1,7 @@
-import React from 'react'
-import { LANDING_PAGE_HEADING } from '../Utils/constants'
-import { FaArrowUp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 const LandingPage = () => {
   return (
-    <div className=' w-full h-full bg-white-  '
+    <div className=' w-full h-screen  .stack '
     data-scroll data-scroll-section data-scroll-speed="-.1"
     >
         <div className=' mt-20 md:px-20  py-10 gap-2 px-4 flex flex-col'>

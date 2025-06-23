@@ -6,3 +6,7 @@
     --font-monoserrat:"IBM Plex Sans", sans-serif;
     --font-plex:"IBM Plex Sans", sans-serif;
 }
+.stack{
+    position: sticky;
+    top: 0;
+}
